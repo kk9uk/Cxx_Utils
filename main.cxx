@@ -2,11 +2,7 @@
 #include "Constants.hxx"
 #include "Random.hxx"
 #include "Input.hxx"
-
-// force constexpr execute at compile-time
-consteval auto compile_time(auto val) {
-    return val;
-}
+#include "main.hxx"
 
 int main() {
     Timer timer;
