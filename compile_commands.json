@@ -6,7 +6,6 @@
       "-std=c++23",
       "-Wall",
       "-ggdb",
-      "-fsanitize=address",
       "-Og",
       "-I",
       "./include",
