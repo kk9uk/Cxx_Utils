@@ -2,11 +2,13 @@
 #include "Constants.hxx"
 #include "Random.hxx"
 #include "Input.hxx"
-#include "main.hxx"
+#include <gtest/gtest.h>
 
-int main() {
+int main(int argc, char **argv) {
     Timer timer;
     std::cout << Random::get(CONSTANTS::ZERO, INPUT::get_user_exactly_input_a_double()) << '\n';
     std::cout << "Time taken: " << timer.elapsed() << " seconds\n";
-    return 0;
+
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
