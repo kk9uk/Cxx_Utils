@@ -4,7 +4,7 @@ OBJS = $(patsubst ./src/%.cxx, ./obj/%.o, $(wildcard ./src/*.cxx))
 LIBS = -fsanitize=address -pthread -lgtest
 
 bear:
-	bear -- make all
+	bear -- make -j $(shell nproc) all
 
 all: $(OBJS)
 	$(CXX) $(OBJS) $(LIBS) -o ./a.out
