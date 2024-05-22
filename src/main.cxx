@@ -6,7 +6,7 @@
 
 int main(int argc, char **argv) {
     Timer timer;
-    std::cout << Random::get(CONSTANTS::ZERO, INPUT::get_user_exactly_input_a_double()) << '\n';
+    std::cout << Random::get(CONSTANTS::ZERO, INPUT::get_user_exactly_input_an_int()) << '\n';
     std::cout << "Time taken: " << timer.elapsed() << " seconds\n";
 
     testing::InitGoogleTest(&argc, argv);

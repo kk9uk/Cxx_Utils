@@ -10,10 +10,10 @@ namespace INPUT
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     }
     
-    inline double get_user_exactly_input_a_double() {
+    inline int get_user_exactly_input_an_int() {
         while (true) {
-            double val{};
-            std::cout << "Please input a decimal number: ";
+            int val{};
+            std::cout << "Please input an integer: ";
             std::cin >> val;
     
             // Check for failed extraction
