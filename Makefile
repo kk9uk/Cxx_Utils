@@ -1,7 +1,7 @@
 CXX = g++
-CXXFLAGS = -std=c++23 -Wall -ggdb -fsanitize=address -Og -I ./include -c
+CXXFLAGS = -std=c++23 -Wall -ggdb -Og -I ./include -c
 OBJS = $(patsubst ./src/%.cxx, ./obj/%.o, $(wildcard ./src/*.cxx))
-LIBS = -fsanitize=address -pthread -lgtest
+LIBS = -pthread -lgtest
 
 wrapper:
 	mkdir -p ./obj
