@@ -5,7 +5,7 @@ LIBS = -pthread -lgtest
 
 wrapper:
 	mkdir -p ./obj
-	bear -- make -j $(nproc) all
+	bear -- make -j $(shell nproc) all
 
 all: $(OBJS)
 	$(CXX) $(OBJS) $(LIBS) -o ./a.out
